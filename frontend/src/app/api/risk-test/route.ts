@@ -68,30 +68,73 @@ export async function GET() {
     financialInfo: [
       {
         id: 1,
-        type: "number",
-        name: "income",
-        label: "درآمد ماهانه",
-        placeholder: "مثلاً ۵۰,۰۰۰,۰۰۰"
+        component: "number",
+        name: "investmentAmount",
+        label: "حداقل مبلغ تمایل به سرمایه‌گذاری",
+        placeholder: "مثلاً ۱۰۰,۰۰۰,۰۰۰ تومان",
+        required: true,
       },
       {
         id: 2,
-        type: "number",
-        name: "assets",
-        label: "ارزش تقریبی دارایی",
-        placeholder: "مثلاً ۱ میلیارد"
+        component: "number",
+        name: "cashSavings",
+        label: "کل پس‌انداز نقدی",
+        placeholder: "اختیاری",
+        required: false,
+        helperText:
+          "صرفاً جهت ارائه پیشنهادهای سرمایه‌گذاری آتی",
       },
       {
         id: 3,
-        type: "select",
-        name: "goal",
-        label: "هدف سرمایه‌گذاری",
+        component: "radio",
+        name: "investmentPeriod",
+        label: "دوره مورد تمایل سرمایه‌گذاری",
+        required: true,
+
         options: [
-          "حفظ سرمایه",
-          "رشد سرمایه",
-          "درآمد ماهانه"
-        ]
-      }
+          "کوتاه‌مدت (۱ تا ۳ سال)",
+          "میان‌مدت (۳ تا ۶ سال)",
+          "بلندمدت (بیش از ۶ سال)",
+        ],
+      },
+      {
+        id: 4,
+        component: "radio",
+        name: "multiPortfolio",
+        label: "تمایل به تشکیل چند سبد سرمایه‌گذاری مجزا",
+        required: true,
+
+        options: [
+          "دارم",
+          "ندارم",
+        ],
+      },
+      {
+        id: 5,
+        component: "radio",
+        name: "investmentOpportunities",
+        label: "تمایل به اطلاع از به‌روزترین فرصت‌های سرمایه‌گذاری",
+        required: true,
+
+        options: [
+          "دارم",
+          "ندارم",
+        ],
+      },
+      {
+        id: 6,
+        component: "radio",
+        name: "portfolioNotification",
+        label: "تمایل به اطلاع لحظه‌ای از وضعیت سبد سرمایه‌گذاری",
+        required: true,
+
+        options: [
+          "دارم",
+          "ندارم",
+        ],
+      },
     ],
+
     result: {
       riskLevel: "ریسک‌پذیری متوسط",
       score: 78,
