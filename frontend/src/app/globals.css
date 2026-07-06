@@ -47,19 +47,17 @@ body {
 
 
 /* Reset button styles */
-button {
+/* button {
   appearance: none;
   border: none;
   background-color: transparent;
   cursor: pointer;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  /* color: #fff; */
-  /* تغییر رنگ متن به سفید */
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 5;
   margin: 0;
-}
+} */
 
 /* Default button styles using Tailwind classes */
 button.default-button {

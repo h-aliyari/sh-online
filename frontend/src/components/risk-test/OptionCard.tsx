@@ -36,7 +36,7 @@ export default function OptionCard({
         }
       `}
     >
-      <span className="text-base font-medium text-black/70">
+      <span className="text-base font-medium">
         {text}
       </span>
 
@@ -51,7 +51,7 @@ export default function OptionCard({
             h-6
             rounded-full
             border-2
-            border-gray-300
+            border-gray-700
             "
           />
         )}

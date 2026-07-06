@@ -82,22 +82,18 @@ export default function ResultPage() {
         )}
 
         {thinkingDone && (
+          <>
+            <PortfolioCard
+              portfolio={result.portfolio}
+            />
 
-          <TypewriterMessage
-            text={result.aiAnalysis}
-            onComplete={() =>
-              setTypingDone(true)
-            }
-          />
-
-        )}
-
-        {typingDone && (
-
-          <PortfolioCard
-            portfolio={result.portfolio}
-          />
-
+            <TypewriterMessage
+              text={result.aiAnalysis}
+              onComplete={() =>
+                setTypingDone(true)
+              }
+            />
+          </>
         )}
 
         {typingDone && (
