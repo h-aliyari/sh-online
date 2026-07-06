@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react';
 export default function MagazinePage() {
   const [articles, setArticles] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-// دریافت مقالات هنگام بارگذاری صفحه
+  // دریافت مقالات هنگام بارگذاری صفحه
   useEffect(() => {
-    fetch('http://localhost:8000/api/articles/')
+    fetch('/api/articles')
       .then(res => {
         if (!res.ok) throw new Error('خطا در دریافت داده‌ها');
         return res.json();
@@ -17,12 +17,12 @@ export default function MagazinePage() {
       })
       .finally(() => setLoading(false));
   }, []);
-return (
+  return (
     <div className="container mx-auto px-6 py-12 text-center">
       <h1 className="text-2xl font-bold text-primary mb-6">مجله دیجیتال</h1>
       <hr />
       <br /><br />
-{loading ? (
+      {loading ? (
         <p className="text-gray-500">در حال بارگذاری مقالات...</p>
       ) : articles.length === 0 ? (
         <p className="text-gray-500">مقاله‌ای وجود ندارد.</p>

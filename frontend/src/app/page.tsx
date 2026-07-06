@@ -1,12 +1,14 @@
 // frontend\src\app\page.tsx
-import Portfolio from '@/components/home/Portfolio';
+// import Portfolio from '@/components/home/Portfolio';
+import MarketGrowth from '@/components/home/MarketGrowth';
 import HotOpportunities from '@/components/home/HotOpportunities';
 import LatestNews from '@/components/home/LatestNews';
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-8 pb-32">
-      <Portfolio />
+      {/* <Portfolio /> */}
+      <MarketGrowth />
       <HotOpportunities />
       <LatestNews />
     </div>

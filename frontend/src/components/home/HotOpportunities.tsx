@@ -16,7 +16,7 @@ const HotOpportunities = () => {
       </div>
       <div className="bg-white border-2 border-dashed border-gray-100 rounded-3xl h-36 flex flex-col items-center justify-center text-gray-400 gap-2 font-medium">
          {/* <span className="text-2xl">🔥</span> */}
-         <p className="text-[11px]" >با API پر میشود</p>
+         <p className="text-[11px]" >فرصتهای جدید سرمایه گذاری به زودی ...</p>
       </div>
     </section>
   );

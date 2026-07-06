@@ -1,7 +1,4 @@
 'use client';
-// import PortfolioPieChart from './charts/PortfolioPieChart';
-// import PortfolioCandlestickChart from './charts/PortfolioCandlestickChart';
-// import PortfolioLineChart from './charts/PortfolioLineChart';
 import PortfolioTable from "./PortfolioTable";
 import { useState } from 'react';
 
@@ -19,15 +16,7 @@ export default function PortfolioPage() {
       <br />
       <hr className="mb-8" />
 
-      {/* جدول داده‌ها را مدیریت می‌کند و هنگام تغییر، آن را به والد اطلاع می‌دهد */}
       <PortfolioTable onDataChange={handleDataChange} />
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-        {/* نمودارها داده‌ها را از props دریافت می‌کنند */}
-        {/* <PortfolioPieChart data={records} />
-        <PortfolioCandlestickChart data={records} />
-        <PortfolioLineChart data={records} /> */}
-      </div>
     </div>
   );
 }

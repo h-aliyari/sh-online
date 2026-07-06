@@ -12,7 +12,7 @@ const Header = () => {
 
       <nav className="flex gap-5 items-center">
         {/* تغییر تم */}
-        {isDarkMode ? (
+        {/* {isDarkMode ? (
           <button onClick={toggleTheme} className="text-white px-0 py-2 rounded-md hover:bg-blue-500">
             ☀️
           </button>
@@ -20,7 +20,7 @@ const Header = () => {
           <button onClick={toggleTheme} className="text-white px-0 py-2 rounded-md hover:bg-red-500">
             🌙
           </button>
-        )}
+        )} */}
         <Link href="/user" className="text-secondary/70 font-medium text-sm hover:text-primary transition-colors">
           👤
         </Link>
