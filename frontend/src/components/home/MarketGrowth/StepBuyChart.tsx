@@ -170,8 +170,8 @@ export default function StepBuyChart({
             data={stock.history}
             margin={{
               top: 5,
-              right: 15,
-              left: -20,
+              right: 25,
+              left: -4,
               bottom: 0,
             }}
           >
@@ -215,11 +215,15 @@ export default function StepBuyChart({
 
               <LabelList
                 dataKey="buyPercent"
-                position="top"
-                formatter={(value) =>
-                  `${value}% خرید`
-                }
-              />
+                position="bottom"
+                offset={12}
+                formatter={(value) => `${value}% خرید`}
+                style={{
+                    fontSize: 10,
+                    fontWeight: 700,
+                    fill: '#333',
+                }}
+                />
 
             </Line>
 
