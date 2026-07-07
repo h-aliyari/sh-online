@@ -57,13 +57,13 @@ export default function FinancialForm({
         "
         >
 
-        <h1 className="text-3xl font-black">
+        <h1 className="text-3xl mb-7 font-bold">
           اطلاعات مالی
         </h1>
         <p className="text-black/60 mt-2 mb-8 leading-7">
           لطفاً اطلاعات زیر را تکمیل کنید تا
-          هوش مصنوعی مناسب‌ترین سبد سرمایه‌گذاری
-          را برای شما پیشنهاد دهد.
+          توسط هوش مصنوعی مناسب‌ترین سبد سرمایه‌گذاری
+          به برای شما پیشنهاد داده شود.
         </p>
 
         <div className="space-y-8 mb-6">
